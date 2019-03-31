@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
@@ -30,4 +31,29 @@
   to {
     transform: rotate(360deg);
   }
+}
+li {
+  list-style: none !important;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+li span {
+  padding: 2px 5px;
+  margin: 10px;
+  border: 1px solid #282c34;
+  background: #61dafb;
+  color: #282c34;
+  border-radius: 2px;
+  cursor: pointer;
+}
+li span:hover {
+  border: 1px solid #282c34;
+  background: rgb(110, 160, 173);
+  border-radius: 2px;
+}
+
+.done {
+  text-decoration: line-through;
 }
