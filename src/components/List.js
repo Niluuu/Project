@@ -7,9 +7,9 @@ export default class List extends Component {
       <div>
         { todos.map((todo,index) => { 
           return <li key={index} id={index}>
-            <span onClick={() => this.props.checked(index)}><i class="fas fa-check"></i></span>
+            <span onClick={() => this.props.checked(index)}><i className="fas fa-check"></i></span>
             <p className={todo.done ? "done": null}>{todo.todo}</p>
-            <span onClick={() => this.props.deleteTodo(todo)}>&times;</span>
+            <span onClick={() => this.props.deleteTodo(index)}>&times;</span>
           </li> 
         }) }
       </div>
